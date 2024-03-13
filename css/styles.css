@@ -31,7 +31,8 @@ i {
   margin: 8px;
   display: flex;
   align-items: center;
-  padding: 1em;
+  padding: 8px;
+  border: 2px solid;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -171,3 +172,4 @@ p {
     padding: 20px 4px;
   }
 }
+
