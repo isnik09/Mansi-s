@@ -26,6 +26,13 @@ i {
 }
 .navigation-link {
   padding: 8px 16px;
+  margin: 8px;
+  border: 2px solid;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .emphesize {
   margin: 8px;
@@ -106,7 +113,7 @@ i {
 }
 
 .border-half {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .center-div {
@@ -125,6 +132,7 @@ i {
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+  scrollbar-width: none;
 }
 
 div,
@@ -172,4 +180,3 @@ p {
     padding: 20px 4px;
   }
 }
-
