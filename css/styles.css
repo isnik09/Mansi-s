@@ -16,6 +16,11 @@ html {
   padding-bottom: 20px;
 }
 
+.navbar-light ,.navbar-toggler {
+  color: black;
+  
+}
+
 i {
   padding: 0px 4px;
 }
