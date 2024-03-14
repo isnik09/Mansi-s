@@ -23,13 +23,25 @@ function openWebPage(url) {
 function toggleAbout() {
   homePage.classList.remove("selected-link");
   aboutMe.classList.add("selected-link");
+
+  contactMe.classList.remove("selected-link");
   loadPage(`about`);
 }
 
 function toggleHome() {
   aboutMe.classList.remove("selected-link");
   homePage.classList.add("selected-link");
+
+  contactMe.classList.remove("selected-link");
   loadPage(`intro`);
+}
+
+function toggleContactMe() {
+  contactMe.classList.add("selected-link");
+  homePage.classList.remove("selected-link");
+  aboutMe.classList.remove("selected-link");
+
+  loadPage(`contact-me`);
 }
 
 contactMe.addEventListener("click", () => {
@@ -38,18 +50,19 @@ contactMe.addEventListener("click", () => {
 
 aboutMe.addEventListener("click", toggleAbout);
 homePage.addEventListener("click", toggleHome);
+contactMe.addEventListener("click", toggleContactMe);
 
 toggleHome();
 
-
-
-
+// toggleContactMe();
 
 // GO TO TOP
 
 window.onscroll = function () {
   scrollFunction();
 };
+
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
