@@ -2,9 +2,20 @@ body {
   padding: 40px;
   background-color: #fbfbfb;
 }
-html {
-  scroll-behavior: smooth;
+.hiddenn {
+  display: none;
 }
+
+/* FONTS */
+
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+/* FONTS */
 
 .clickable {
   cursor: pointer;
@@ -16,9 +27,9 @@ html {
   padding-bottom: 20px;
 }
 
-.navbar-light ,.navbar-toggler {
+.navbar-light,
+.navbar-toggler {
   color: black;
-  
 }
 
 i {
@@ -40,10 +51,11 @@ i {
   -o-border-radius: 8px;
 }
 .emphesize {
-  margin: 8px;
   display: flex;
   align-items: center;
-  padding: 8px;
+  z-index: 4;
+  padding: 1em;
+  gap: 0.1em;
   border: 2px solid;
   box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
   border-radius: 8px;
@@ -81,9 +93,19 @@ i {
 #name {
   font-weight: bolder;
 }
+
+.hvr:hover {
+  box-shadow: 8px 8px 0px 0px rgb(0, 0, 0);
+  scale: 1.04;
+  z-index: 4;
+}
+
 .flex-div {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+  gap: 1em;
 }
 
 .selected-link {
@@ -150,6 +172,26 @@ h6,
 p {
   padding: 0;
   margin: 0;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+/* 
+.red-hat display {
+} */
+
+.display-font {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 #goToTopBtn {
@@ -176,6 +218,13 @@ p {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+
+.name-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: baseline;
 }
 
 /* MEDIA QUERY */

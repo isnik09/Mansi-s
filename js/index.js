@@ -62,8 +62,6 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("goToTopBtn").style.display = "block";
@@ -75,4 +73,13 @@ function scrollFunction() {
 function goToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+var isTouchDevice = "ontouchstart" in document.documentElement;
+// alert(isTouchDevice);
+
+const mainCursor = document.getElementsByName("circle-div");
+
+if (isTouchDevice) {
+  mainCursor.classList.add("hidden");
 }
