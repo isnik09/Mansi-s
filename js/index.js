@@ -75,11 +75,4 @@ function goToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-var isTouchDevice = "ontouchstart" in document.documentElement;
-// alert(isTouchDevice);
-
-const mainCursor = document.getElementsByName("circle-div");
-
-if (isTouchDevice) {
-  mainCursor.classList.add("hidden");
-}
+ 
